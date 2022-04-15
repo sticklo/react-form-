@@ -1,0 +1,109 @@
+*, body{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: rgb(9, 3, 36);
+}
+
+.App{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  padding: 2rem 0 4rem 0;
+  background-color: #f1f1f1;
+}
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.form__Details{
+  display: grid;
+  width: 80vw;
+  row-gap: 2rem;
+  background-color: #f1f1f1;
+}
+
+h1{
+  margin-bottom: 2rem;
+}
+
+form{
+  width: 80%;
+  display: grid;
+  row-gap: 2rem;
+}
+
+input[type="text"], input[type="email"], textarea{
+  margin-top: .5rem;
+  border: 1px solid #ccc;
+  height: 2rem;
+  width: 100%;
+  padding: .5rem;
+  border-radius: .3rem;
+  color: rgb(109, 106, 106);
+}
+input:focus, textarea:focus{
+  outline: none;
+}
+
+.bio{
+  resize: none;
+  height: 5rem;
+}
+
+button{
+  margin-top: 1rem;
+  width: 50%;
+  height: 3rem;
+  border: none;
+  border-radius: .5rem;
+  background-color: #0d0c55;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.radio{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: .5rem;
+}
+
+
+@media screen and (min-width: 900px){
+  body{
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .App{
+    border-radius: .3rem;
+    width: 50vw;
+    box-shadow: 0 .1rem .5rem rgba(0, 0, 0, 0.064);
+  }
+
+  .form__Details{
+    padding: 0 4rem;
+  }
+  .form__Details h1{
+    text-align: center;
+  }
+  form{
+    width: 70%;
+  }
+
+  .name, .surname, input[type="email"], .radio{
+    width: 70%;
+  }
+
+  button{
+    width: 25%;
+  }
+}
